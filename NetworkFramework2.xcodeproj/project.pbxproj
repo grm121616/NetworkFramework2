@@ -13,6 +13,7 @@
 		471B7C942490991F006B967C /* APIRequestLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471B7C8F2490991F006B967C /* APIRequestLoader.swift */; };
 		471B7C952490991F006B967C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471B7C902490991F006B967C /* NetworkError.swift */; };
 		471B7C962490991F006B967C /* NetworkRequestConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471B7C912490991F006B967C /* NetworkRequestConfigure.swift */; };
+		471B7C9A2490A571006B967C /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 471B7C84249098E7006B967C /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,30 +58,14 @@
 			isa = PBXGroup;
 			children = (
 				471B7C83249098E7006B967C /* NetworkFramework2.h */,
-				471B7C8B2490991F006B967C /* Extension */,
-				471B7C8D2490991F006B967C /* NetworkController */,
-				471B7C84249098E7006B967C /* Info.plist */,
-			);
-			path = NetworkFramework2;
-			sourceTree = "<group>";
-		};
-		471B7C8B2490991F006B967C /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				471B7C8C2490991F006B967C /* URLSession+Session.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		471B7C8D2490991F006B967C /* NetworkController */ = {
-			isa = PBXGroup;
-			children = (
 				471B7C8E2490991F006B967C /* APIRequestConfigure.swift */,
 				471B7C8F2490991F006B967C /* APIRequestLoader.swift */,
 				471B7C902490991F006B967C /* NetworkError.swift */,
 				471B7C912490991F006B967C /* NetworkRequestConfigure.swift */,
+				471B7C8C2490991F006B967C /* URLSession+Session.swift */,
+				471B7C84249098E7006B967C /* Info.plist */,
 			);
-			path = NetworkController;
+			path = NetworkFramework2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				471B7C9A2490A571006B967C /* Info.plist in Sources */,
 				471B7C942490991F006B967C /* APIRequestLoader.swift in Sources */,
 				471B7C952490991F006B967C /* NetworkError.swift in Sources */,
 				471B7C922490991F006B967C /* URLSession+Session.swift in Sources */,
@@ -296,8 +282,10 @@
 		471B7C89249098E7006B967C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6X5K2548W7;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -319,8 +307,10 @@
 		471B7C8A249098E7006B967C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6X5K2548W7;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
